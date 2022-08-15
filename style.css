@@ -1,0 +1,100 @@
+/* remove default browser styling */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    background-image: linear-gradient(120deg, rgb(247, 118, 139), rgb(255, 255, 255));
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+header
+{
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
+
+}
+header, form
+{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button
+{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: whitesmoke;
+}
+
+form button 
+{
+    color:black;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover
+{
+    background: black;
+    color: whitesmoke;
+}
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.todo-list
+{
+    min-width: 30%;
+    list-style: none;
+}
+.todo
+{
+margin: 0.5rem;
+background: whitesmoke;
+color:black;
+font-size: 1.5rem;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.todo li
+{
+    flex: 1;
+}
+.trash-btn, .complete-btn
+{
+background: rgb(247, 118, 139);
+color: whitesmoke;
+border: none;
+padding: 1rem;
+cursor: pointer;
+font-size: 1rem;
+}
+.complete-btn
+{
+    background: thistle;
+}
+.todo-item
+{
+    padding: 0rem 0.5rem;
+}
+.fa-trash, .fa-check
+{
+    pointer-events: none;
+}
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
